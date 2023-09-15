@@ -1,0 +1,180 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 95vw;
+    margin: 5px;
+    padding: 5px;
+    box-shadow: 10px 50px 60px rgba(0, 0, 0, 0.1);
+    border-radius: 5%;
+    margin-bottom: 100px;
+    border: 3px solid #280000;
+
+    background-color: #ff9898;
+    
+  }
+  
+  .image-container {
+    flex: 1;
+    padding: 5px;
+    align-self: flex-start;
+    background-color: #ff4c4c;
+    border-radius: 50px;
+  }
+  
+  .image-container img {
+    max-width: 100%;
+    border-radius: 20%;
+    max-height: 50vh;
+  }
+  
+  .content {
+    flex: 2;
+    padding: 30px;
+  }
+  
+  .names {
+    text-shadow: 20px 12px 4px rgba(7, 6, 6, 0.925);
+    text-transform: uppercase;
+    background-color: #280000;
+    color: #a30000;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+  }
+  
+  h2 {
+    color: #333;
+  }
+  
+  p {
+    color: rgb(63, 62, 62);
+    margin-bottom: 15px;
+  }
+  
+  .skill {
+    color: #A30000;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+  }
+  
+  .skills {
+    margin-top: 20px;
+  }
+  
+  .skills-list {
+    padding: 0;
+    
+    
+  }
+  
+  .skill-hover {
+    padding: 10px 0;
+    margin: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+    
+  }
+  
+  .skill-hover:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  }
+  
+  .skills-list li {
+    margin-bottom: 5px;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column-reverse;
+      text-align: center;
+    }
+  
+    .image-container {
+      order: 2;
+      padding: 0;
+      align-self: center;
+    }
+  
+    .content {
+      order: 1;
+      padding: 20px;
+    }
+  }
+  
+  .intro-paragraph {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .hobbies-paragraph {
+    font-size: 16px;
+    line-height: 1.4;
+    color: rgb(65, 64, 64);
+  }
+  
+  .social-icon {
+    text-transform: uppercase;
+    background-image: linear-gradient(-225deg,
+        #231557 0%,
+        #44107a 100%);
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    color: #ff0000;
+    
+  }
+  
+  /* Social-icon-skills */
+  .social-icon-skill {
+    text-transform: uppercase;
+    background-image: linear-gradient(-225deg,
+    #231557 0%,
+    #44107a 100%);
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    
+    
+  }
+
+
+  /* Last minute CSS changed */
+  .skills-wrapper {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next row */
+    justify-content: space-between; /* Space items evenly */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .skills-list1,
+  .skills-list2 {
+    flex-basis: calc(50% - 10px); /* Set width for each list (adjust margin as needed) */
+    padding: 0;
+    margin: 0;
+  }
+
+  /* Responsive CSS */
+@media (max-width: 300px) {
+  /* Adjust button size for smaller screens */
+  .image-container h4 a{
+    font-size: 16px;
+  }
+ .image-container h4 {
+  margin-top: 10px;
+ }
+}
